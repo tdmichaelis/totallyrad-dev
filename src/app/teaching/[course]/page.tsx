@@ -1,4 +1,8 @@
-export default async function Page({ params }: { params: { course: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ course: string }>;
+}) {
   const { course } = await params;
   return (
     <div className="container py-4 px-6">

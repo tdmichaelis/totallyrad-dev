@@ -1,6 +1,8 @@
 export default function UnsplashLayout({
   children,
-}: Readonly<{ children: React.ReactNode; image: React.ReactNode }>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="grow flex flex-col overflow-auto">
       <div className="border-b border-[var(--border)]">

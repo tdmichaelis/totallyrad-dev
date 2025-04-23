@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function Page({
   params,
 }: {
-  params: { characterId: string };
+  params: Promise<{ characterId: string }>;
 }) {
   const { characterId } = await params;
   const response = await fetch(

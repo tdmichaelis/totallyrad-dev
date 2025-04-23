@@ -4,9 +4,10 @@ import { getPhotoById } from "@/app/projects/unsplash/actions";
 export default async function Page({
   params,
 }: {
-  params: { imageId: string };
+  params: Promise<{ imageId: string }>;
 }) {
   const { imageId } = await params;
+
   const image: {
     urls: {
       regular: string;
