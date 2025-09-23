@@ -9,8 +9,8 @@ export default function SideDrawer({
     <>
       <div className="relative z-50 flex -translate-x-full sm:translate-x-0 transition-all duration-300 md:overflow-visible">
         <section
-          className={`border-r border-[var(--border)] sm:pr-5 transition-all duration-300 ${
-            open ? "w-0 sm:w-[272px]" : "w-0"
+          className={`border-r border-[var(--border)] transition-all duration-300 ${
+            open ? "w-0 sm:w-[272px]" : "w-0 sm:pr-5"
           } `}
         >
           <div

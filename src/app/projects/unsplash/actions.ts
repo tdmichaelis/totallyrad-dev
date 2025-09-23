@@ -69,6 +69,9 @@ export async function searchCollections(query: string) {
 }
 
 export async function getCollectionPhotos(collectionId: string) {
+  if (!collectionId) {
+    return [];
+  }
   const res = await fetch(
     `https://api.unsplash.com/collections/${collectionId}/photos`,
     {
